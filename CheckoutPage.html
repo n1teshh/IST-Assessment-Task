@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>CheckoutPage</title>
+</head>
+<body>
+    <div id="page">
+        <table id="cart">
+          <thead>
+            <tr>
+              <th class="first">Game Image</th>
+              <th class="second">Game Description</th>
+              <th class="third">Qty</th>
+              <th class="fourth">Total Amount</th>
+              <th class="fifth">&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- shopping cart contents -->
+            <tr class="gameitem">
+              <td><img src="newfio.png" class="thumb"></td>
+              <td>NewFio Package</td>
+              <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+              <td>$79.99</td>
+              <td><span class="remove"><img src="delete.png" alt="X"></span></td>
+            </tr>
+            <tr class="gameitem">
+              <td><img src="https://i.imgur.com/RkzoXzZ.png" class="thumb"></td>
+              <td>Page2 Game</td>
+              <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+              <td>$78.95</td>
+              <td><span class="remove"><img src="delete.png" alt="X"></span></td>
+            </tr>
+            <tr class="gameitem">
+              <td><img src="https://i.imgur.com/vZ26Uwy.png" class="thumb"></td>
+              <td>Page3 Game</td>
+              <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+              <td>$85.00</td>
+              <td><span class="remove"><img src="delete.png" alt="X"></span></td>
+            </tr>
+            <tr class="gameitem">
+              <td><img src="https://i.imgur.com/tEdRnz4.png" class="thumb"></td>
+              <td>Page4 game</td>
+              <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+              <td>$77.50</td>
+              <td><span class="remove"><img src="delete.png" alt="X"></span></td>
+            </tr>
+            
+             <tr class="extracosts">
+              <td class="light">Shipping &amp; Tax</td>
+              <td colspan="2" class="light"></td>
+              <td>$25.00</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr class="totalprice">
+              <td class="light">Total:</td>
+              <td colspan="2">&nbsp;</td>
+              <td colspan="2"><span class="thick">$346.44</span></td>
+            </tr>
+            
+            <tr class="checkoutrow">
+              <td colspan="5" class="checkout"><button id="submitbtn">Checkout Now</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</body>
+</html>

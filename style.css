@@ -1,0 +1,44 @@
+body
+{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+header
+{
+    text-align: center;
+    background-image: url('asdf.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 20%;
+    font-size: 25px;
+    color: rgb(246, 248, 248);
+    font-family: georgia;
+}
+
+main
+{
+    padding: 19px;
+    font: size 15px;
+    text-emphasis-color: rgb(255, 0, 234);
+}
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 200%;
+    text-align: center;
+  }
+p 
+{
+    font-size: 16px;
+    color: #d41010;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+ul
+{
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+}
