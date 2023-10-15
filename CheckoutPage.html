@@ -1,73 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="checkout.css">
-    <title>CheckoutPage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="checkout.css">
 </head>
 <body>
-    <div id="page">
+
+<h1>Games Checkout Page</h1>
+<p> Please select your favourite game from the below </p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      <div class="row">
         <table id="cart">
           <thead>
             <tr>
-              <th class="first">Game Image</th>
-              <th class="second">Game Description</th>
-              <th class="third">Qty</th>
-              <th class="fourth">Total Amount</th>
+              <th class="first"> Game Image</th>
+              <th class="second"> Game Description</th>
+              <th class="third"> Select Game</th>
+              <th class="fourth"> Amount</th>
               <th class="fifth">&nbsp;</th>
             </tr>
           </thead>
           <tbody>
-            <!-- shopping cart contents -->
-            <tr class="gameitem">
-              <td><img src="newfio.png" class="thumb"></td>
+            <tr class="gameitem" >
+              <td><img src="n1.png" alt="NewFio" style="width:100%" ></td>
               <td>NewFio Package</td>
-              <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-              <td>$79.99</td>
-              <td><span class="remove"><img src="delete.png" alt="X"></span></td>
+              <td><input type="checkbox" checked="checked" ></td>
+              <span class="checkmark"></span>
+              <td>$20.00</td>
+              <td><span class="remove"><img src="delete.png" alt="X" width="25" height="25"></span></td>
             </tr>
             <tr class="gameitem">
-              <td><img src="https://i.imgur.com/RkzoXzZ.png" class="thumb"></td>
+              <td><img src="img2.png" alt="img2" style="width:100%" ></td>
               <td>Page2 Game</td>
-              <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-              <td>$78.95</td>
-              <td><span class="remove"><img src="delete.png" alt="X"></span></td>
+              <td><input type="checkbox"></td>
+              <span class="checkmark"></span> 
+              <td>$15.00</td>
+              <td><span class="remove"><img src="delete.png" alt="X" width="25" height="25"></span></td>
             </tr>
             <tr class="gameitem">
-              <td><img src="https://i.imgur.com/vZ26Uwy.png" class="thumb"></td>
+              <td><img src="img3.png" alt="img3" style="width:100%" ></td>
               <td>Page3 Game</td>
-              <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-              <td>$85.00</td>
-              <td><span class="remove"><img src="delete.png" alt="X"></span></td>
+              <td><input type="checkbox"></td>
+              <span class="checkmark"></span> 
+              <td>$22.00</td>
+              <td><span class="remove"><img src="delete.png" alt="X" width="25" height="25"></span></td>
             </tr>
             <tr class="gameitem">
-              <td><img src="https://i.imgur.com/tEdRnz4.png" class="thumb"></td>
+              <td><img src="img4.png" alt="img4" style="width:100%" ></td>
               <td>Page4 game</td>
-              <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-              <td>$77.50</td>
-              <td><span class="remove"><img src="delete.png" alt="X"></span></td>
+              <td><input type="checkbox"></td>
+              <span class="checkmark"></span> 
+              <td>$17.00</td>
+              <td><span class="remove"><img src="delete.png" alt="X" width="25" height="25"></span></td>
             </tr>
-            
-             <tr class="extracosts">
+            <tr class="extracosts">
               <td class="light">Shipping &amp; Tax</td>
               <td colspan="2" class="light"></td>
-              <td>$25.00</td>
+              <td>$10.00</td>
               <td>&nbsp;</td>
             </tr>
             <tr class="totalprice">
               <td class="light">Total:</td>
               <td colspan="2">&nbsp;</td>
-              <td colspan="2"><span class="thick">$346.44</span></td>
-            </tr>
-            
-            <tr class="checkoutrow">
-              <td colspan="5" class="checkout"><button id="submitbtn">Checkout Now</button></td>
+              <td colspan="2"><span class="thick">$84.00</span></td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Peter Joseph">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="peterj@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="10 George Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Sydney">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NSW">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="2000">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Peter Joseph">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="August">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2025">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="226">
+              </div>
+            </div>
+          </div>
+      </div>
+      <label>
+        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+      </label>
+      <input type="submit" value="Continue to checkout" class="btn">
+     </form>
     </div>
-  </body>
+  </div>
 </body>
 </html>
