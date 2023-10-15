@@ -4,27 +4,19 @@ body {
   padding: 8px;
 }
 
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
+.container{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
 
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-.container input:checked ~ .checkmark {
-  background-color: #21f36e;
 }
 
 table, th, td {
   border: 1px solid whitesmoke;
   border-collapse: collapse;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 h1 {
@@ -80,6 +72,7 @@ input[type=text] {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  background-color: #d1e4de;
 }
 
 label {
@@ -94,7 +87,7 @@ label {
 }
 
 .btn {
-  background-color: #04AA6D;
+  background-color: #1a04aa;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -106,7 +99,7 @@ label {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #45a086;
 }
 
 a {

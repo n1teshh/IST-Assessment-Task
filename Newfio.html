@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>Newfio</center</h1>
+        <h1 id="heading1"></center</h1>
     </header>
     <main>
-            <h2>Introduction</h2>
+            <h2 id="heading2"></h2>
             <p>Newfio is a must play and an engaging and fun game in which players will have to answer a series of themed questions which decide the tide of the battle. With its colorful graphics and simple, comprehendable platform, Newfio makes game development accessible to all ages, but only the witty shall conquer it.</p>
-            <h3>Key Features</h3>
+            <h3 id="heading3"></h3>
             <ul>
               <li>Engaging and educational gameplay</li>
 
@@ -34,7 +34,6 @@
               <li>Newfio is a game focused on testing your knowledge of digital technologies.
               </li>
 <img src="n1.png">
-
               <li>To start the game, click on "How to play?" to learn the rules and objectives.
               </li>
 <img src="n3.png">
@@ -55,11 +54,14 @@
 <li>Upon successful completion, you receive a special reward for your efforts.</li>
           </ul></p>
             <h4>Gameplay Preview</h4>
-<img src="n1.png" alt="Newfio Gameplay">
-<img src="n2.png">
-<img src="">
+            <video width="320" height="240" controls>
+              <source src="NewFio.mp4" type="video/mp4">
+            </video>
     </main>
-    
+    <script> document.getElementById("heading1").innerHTML = "Newfio";
+             document.getElementById("heading2").innerHTML = "Introduction";
+             document.getElementById("heading3").innerHTML = "Key Features";             
+    </script>
     <footer>
     </footer>
 </body>

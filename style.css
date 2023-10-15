@@ -11,7 +11,7 @@ body
 header
 {
     text-align: center;
-    background-image: url('asdf.png');
+    background-image: url('n1.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 20%;
@@ -49,18 +49,17 @@ ul
 .btn-group button {
     background-color: #0a04aa; 
     border: 1px solid green; 
-    color: white; /* text */
-    padding: 10px 24px; /* Some padding */
+    color: white; 
+    padding: 10px 24px;
     cursor: pointer; 
     /* width: 35%;  */
     display: block;
   }
   
   .btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
+    border-bottom: none; 
   }
   
-  /* Add a background color on hover */
   .btn-group button:hover {
     background-color: #3e8e5a;
   } 
