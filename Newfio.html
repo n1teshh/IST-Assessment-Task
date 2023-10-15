@@ -58,11 +58,19 @@
               <source src="NewFio.mp4" type="video/mp4">
             </video>
     </main>
-    <script> document.getElementById("heading1").innerHTML = "Newfio";
-             document.getElementById("heading2").innerHTML = "Introduction";
-             document.getElementById("heading3").innerHTML = "Key Features";             
-    </script>
+
     <footer>
+      <button class="button" id="myBtn">Check Time!!</button>
+      <p id="DisplayDate"></p>
     </footer>
+
+    <script> document.getElementById("heading1").innerHTML = "Newfio";
+      document.getElementById("heading2").innerHTML = "Introduction";
+      document.getElementById("heading3").innerHTML = "Key Features";    
+      document.getElementById("myBtn").onclick = displayDate;
+
+      function displayDate() {
+      document.getElementById("DisplayDate").innerHTML = Date(); }
+</script>
 </body>
 </html>

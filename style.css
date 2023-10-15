@@ -46,13 +46,25 @@ ul
     font-style: normal;
 }
 
+.button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
 .btn-group button {
     background-color: #0a04aa; 
     border: 1px solid green; 
     color: white; 
     padding: 10px 24px;
     cursor: pointer; 
-    /* width: 35%;  */
     display: block;
   }
   
